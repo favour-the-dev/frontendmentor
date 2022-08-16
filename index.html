@@ -3,35 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
-
+  <title>Order summary card</title>
+  <link rel="icon" href="./images/favicon-32x32.png">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 15px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      margin: 0;
+      text-align: center;
+      background-color: lavender;
+      font-family: Arial;
+    }
+    .bg {
+      width: 100%;
+      max-width: 425px;
+      border-radius: 5px;
+    }
+    .order{
+      background-color: white;
+      width: 380px;
+      margin: 50px auto;
+      padding-bottom: 30px;
+      border-radius: 10px;
+    }
+    h1 {
+      margin: 20px auto 10px;
+    }
+    .pitcha {
+      width: 60%;
+      font-size: 27px;
+      font-weight: bold;
+      padding: 10px;
+    }
+    .pitchb {
+      width: 70%;
+      color: rgba(24, 23, 23, 0.674);
+      margin-bottom: 40px;
+      line-height: 1.5;
+    }
+    h2 {
+      margin: 0;
+    }
+    p {
+      margin: auto;
+    }
+    
+    .mimi {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px auto 30px;
+      background-color: rgba(230, 230, 250, 0.546);
+      border-radius: 10px;
+      width: 250px;
+      padding: 10px;
+    }
+    .placeorder {
+      display: block;
+      cursor: pointer;
+      margin: 20px auto 20px;
+      width: 300px;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: rgba(17, 17, 186, 0.967);
+      color: white;
+      box-shadow: 0px 10px 10px 4px lavender;
+    }
+    .placeorder:hover {
+      background-color: rgba(17, 17, 186, 0.767);
+    }
+    .plan {
+      text-align: left;
+    }
+    .plana {
+      font-size: 14px;
+    }
+    .change {
+      font-size: 14px;
+      color: rgba(17, 17, 186, 0.967);
+    }
+    .change:hover {
+      text-decoration: none;
+      color: rgba(17, 17, 186, 0.567);
+    }
+    .cancel {
+     text-decoration: none;
+     padding: 10px;
+     color: grey;
+     font-size: 14px;
+    }
+    .cancel:hover {
+      color: black;
+    }
+    span {
+      color: grey;
+    }
+
   </style>
 </head>
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
+  <div class="order">
+    <img src="./images/illustration-hero.svg" alt="" class="bg">
+    <h1 class="pitcha">Order Summary</h1>
+    <p class="pitchb">You can now listen to millions of songs, auidiobooks, and podcasts on any device anywhere you like.</p>
+    <div class="mimi">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#DFE6FB"/><path fill="#717FA6" fill-rule="nonzero" d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/></g></svg>
+      <div class="plan">
+        <h2 class="plana">Annual Plan<br>
+        <span>$59.90/year </span>
+        </h2>
+      </div>
+      <a href="#" class="change">Change</a>
+    </div>
+    <button class="placeorder">
+      Proceed in payment
+    </button>
+    <a href="#" class="cancel">Cancel order</a>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <br>
+    Coded by <a href="#">&copy Favour Odili</a>.
   </div>
 </body>
 </html>
